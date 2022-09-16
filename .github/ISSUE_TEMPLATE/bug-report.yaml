@@ -1,0 +1,39 @@
+name: Bug Report
+description: File a bug report
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If this is or might be security related _do not file an issue_, please refer to the [security policy](https://github.com/apple/swift-nio-extras/security/policy) instead.
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened?
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+  - type: input
+    id: nio-extras-version
+    attributes:
+      label: SwiftNIO Extras version/commit hash
+  - type: input
+    id: swift-version
+    attributes:
+      label: Swift version
+      description: Output of `swift --version`
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      description: Output of `uname -a`

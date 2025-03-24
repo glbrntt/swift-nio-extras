@@ -118,3 +118,6 @@ public final class NFS3FileSystemNoAuthHandler<FS: NFS3FileSystemNoAuth>: Channe
         context.fireErrorCaught(error)
     }
 }
+
+@available(*, unavailable)
+extension NFS3FileSystemNoAuthHandler: Sendable {}
